@@ -21,7 +21,6 @@ const io = Io(server);
 let rooms = [];
 
 app.use(compression());
-app.use(favicon(__dirname + '/public/favicon.ico'));
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
